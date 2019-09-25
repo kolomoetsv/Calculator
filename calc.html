@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="wrapper-large">
+	<h1>Калькулятор доходов</h1>
+		<hr>
+	<div class="wrapper">
+		<div class="column">
+			<h2>Доходы</h2>
+			<input 	type="number" 
+					id="income-salary"
+					placeholder="Зарплата"
+					>
+
+			<input 	type="number" 
+					id="income-freelance"
+					placeholder="Фриланс"
+					>
+
+			<input 	type="number" 
+					id="income-extra-first"
+					
+					placeholder="Дополнительный заработок"
+					>
+
+			<input 	type="number" 
+					id="income-extra-second"
+					placeholder="Дополнительный заработок"
+					>
+		</div>
+		<div class="column">
+			<h2>Расходы</h2>
+			<input  
+					
+					type="number" 
+					id="flat-cost"
+					placeholder="Аренда квартиры"
+					>
+			<input 	type="number" 
+					id="house-service"
+					placeholder="ЖКХ"
+					>
+			<input 	type="number" 
+					id="transport-costs"
+					placeholder="Транспорт"
+					>
+			<input 	type="number" 
+					id="credit-costs"
+					placeholder="Кредит"
+					>
+		</div>
+		<div class="column">
+			<h2>Доступно в месяц</h2>
+			<input 	id="month-available"
+					readonly
+					value="0" 
+					>
+			<h2>Доступно в день</h2>
+			<input 	id="day-available"
+					readonly
+					value="0"
+					>
+			<h2>Накопим за год</h2>
+			<input 	id="total-year"
+					readonly
+					value="0"
+					>
+		</div>
+	</div>
+	
+        <div class="range-block">
+            <h6>Копилка (Сколько откладываем в %?)</h6>
+            <div class="range-wrapper">
+                <div id="slider-range"></div>
+                <div class="slider-range-result">
+                    <input 	type="number" 
+                    		id="percent" 
+                    		readonly>
+                </div>
+            </div>
+        </div>
+            <div class="total-numb">
+                <h6>Копим:</h6>
+                <input
+                   type="number"
+                   id="accumulation"
+                   value="0"
+                   readonly
+            		>
+                <h6>Тратим:</h6>
+                <input 	type="number" 
+                		id="total-spend" 
+                		value="0" 
+                		readonly>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<!-- Подключаем скрипты -->
+	<script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
